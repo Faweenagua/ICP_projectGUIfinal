@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<GridPane alignment="center" hgap="10" prefHeight="432.0" prefWidth="710.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints percentWidth="0.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="447.0" prefWidth="700.0" GridPane.columnIndex="1">
+         <children>
+            <AnchorPane layoutX="-10.0" prefHeight="460.0" prefWidth="261.0" style="-fx-background-color: #344955;" AnchorPane.bottomAnchor="-10.0">
+               <children>
+                  <Pane prefHeight="72.0" prefWidth="261.0" style="-fx-background-color: #232534;">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="32.0" layoutY="13.0" prefHeight="47.0" prefWidth="198.0" text="Galamsey " textAlignment="JUSTIFY" textFill="#e4e0e0">
+                           <font>
+                              <Font name="Arial" size="23.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Button alignment="CENTER_RIGHT" layoutX="54.0" layoutY="176.0" mnemonicParsing="false" onAction="#changeToAddObserve" prefHeight="38.0" prefWidth="153.0" style="-fx-background-color: #4A6572;" text="Observatory" textFill="#e4e0e0">
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button alignment="CENTER_RIGHT" layoutX="54.0" layoutY="240.0" mnemonicParsing="false" onAction="#changeToAddGalamsey" prefHeight="38.0" prefWidth="153.0" style="-fx-background-color: #4A6572;" text="Galamsey Event" textFill="#e4e0e0">
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button alignment="CENTER_RIGHT" layoutX="54.0" layoutY="311.0" mnemonicParsing="false" onAction="#goToRecords" prefHeight="38.0" prefWidth="153.0" style="-fx-background-color: #4A6572;" text="Records   " textFill="#e4e0e0">
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Pane layoutX="251.0" layoutY="-3.0" prefHeight="460.0" prefWidth="449.0" style="-fx-background-color: #e4e0e0;" AnchorPane.bottomAnchor="-10.0" AnchorPane.leftAnchor="251.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="162.0" fitWidth="240.0" layoutX="209.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../galamen-2.png.jpg" />
+                     </image></ImageView>
+                  <ImageView fitHeight="160.0" fitWidth="240.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../galamsey.jpg" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="79.0" layoutY="52.0" opacity="0.84" prefHeight="47.0" prefWidth="292.0" style="-fx-background-color: #4A6572;">
+                     <children>
+                        <Text layoutX="19.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Galamsey Records" textAlignment="CENTER" wrappingWidth="253.99999552965164">
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <VBox layoutX="79.0" layoutY="179.0" prefHeight="248.0" prefWidth="292.0">
+                     <children>
+                        <TableView fx:id="observeList" prefHeight="251.0" prefWidth="292.0" style="-fx-background-color: #7793a1;">
+                          <columns>
+                            <TableColumn fx:id="observeName" prefWidth="174.0" text="Observatory Name" />
+                            <TableColumn fx:id="numberOfEvents" prefWidth="117.0" text="Number of Events" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </children></AnchorPane>
+   </children>
+</GridPane>
