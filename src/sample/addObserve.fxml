@@ -34,7 +34,7 @@
                         </Label>
                      </children>
                   </Pane>
-                  <Button alignment="CENTER_RIGHT" layoutX="54.0" layoutY="176.0" mnemonicParsing="false" onAction="#changeToAddGalamsey" prefHeight="38.0" prefWidth="153.0" style="-fx-background-color: #7793a1;" text="Observatory" textFill="#232534">
+                  <Button alignment="CENTER" layoutX="54.0" layoutY="176.0" mnemonicParsing="false" onAction="#changeToAddObserve" prefHeight="38.0" prefWidth="153.0" style="-fx-background-color: #7793a1;" text="Add Observatory" textFill="#232534">
                      <font>
                         <Font name="Calibri" size="16.0" />
                      </font>
@@ -42,7 +42,15 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button alignment="CENTER_RIGHT" layoutX="54.0" layoutY="240.0" mnemonicParsing="false" onAction="#changeToAddGalamsey" prefHeight="38.0" prefWidth="153.0" style="-fx-background-color: #4A6572;" text="Galamsey Event" textFill="#e4e0e0">
+                  <Button alignment="CENTER" layoutX="54.0" layoutY="240.0" mnemonicParsing="false" onAction="#changeToAddGalamsey" prefHeight="38.0" prefWidth="153.0" style="-fx-background-color: #4A6572;" text="Add Galamsey Event" textFill="#e4e0e0">
+                     <font>
+                        <Font name="Calibri" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button alignment="CENTER" layoutX="54.0" layoutY="311.0" mnemonicParsing="false" onAction="#goToRecords" prefHeight="38.0" prefWidth="153.0" style="-fx-background-color: #4A6572;" text="Check Records" textFill="#e4e0e0">
                      <font>
                         <Font name="Calibri" size="16.0" />
                      </font>
@@ -50,7 +58,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button alignment="CENTER_RIGHT" layoutX="54.0" layoutY="311.0" mnemonicParsing="false" onAction="#goToRecords" prefHeight="38.0" prefWidth="153.0" style="-fx-background-color: #4A6572;" text="Records   " textFill="#e4e0e0">
+                  <Button alignment="CENTER" layoutX="94.0" layoutY="109.0" mnemonicParsing="false" onAction="#changeToAddObserve" prefHeight="38.0" prefWidth="73.0" style="-fx-background-color: #4A6572;" text="Home" textFill="#e4e0e0">
                      <font>
                         <Font name="Calibri" size="16.0" />
                      </font>
